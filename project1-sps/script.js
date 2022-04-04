@@ -14,11 +14,11 @@ var main = function (input) {
   // assign randomNumber to gameChoice scissors, paper or stone
   var gameChoice;
   if (randomNumber == 1) {
-    gameChoice = "Scissors";
+    gameChoice = "scissors";
   } else if (randomNumber == 2) {
-    gameChoice = "Paper";
+    gameChoice = "paper";
   } else if (randomNumber == 3) {
-    gameChoice = "Stone";
+    gameChoice = "stone";
   }
 
   // output = You've won! || You've lost. || It's a draw.
@@ -29,15 +29,15 @@ var main = function (input) {
   var myOutputValue;
 
   if (userChoice == gameChoice) {
-    myOutputValue = `It's a draw!`;
+    myOutputValue = `It's a draw! <br> You both chose ${userChoice}. <br> Play again to win! `;
   } else if (
-    (userChoice == "Scissors" && gameChoice == "Paper") ||
-    (userChoice == "Paper" && gameChoice == "Stone") ||
-    (userChoice == "Stone" && gameChoice == "Scissors")
+    (userChoice == "scissors" && gameChoice == "paper") ||
+    (userChoice == "paper" && gameChoice == "stone") ||
+    (userChoice == "stone" && gameChoice == "scissors")
   ) {
-    myOutputValue = `You've won!`;
+    myOutputValue = `You've won! <br> You chose ${userChoice}. <br> Your opponent chose ${gameChoice}. <br> Play again :) `;
   } else {
-    myOutputValue = `You've lost. Try again.`;
+    myOutputValue = `Oh no, you've lost. <br> You chose ${userChoice}. <br> Your opponent chose ${gameChoice}. <br> Try again!`;
   }
   console.log(gameChoice);
   return myOutputValue;
