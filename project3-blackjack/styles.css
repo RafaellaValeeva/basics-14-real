@@ -54,18 +54,20 @@ nav ul li a {
 
 #header {
   text-align: center;
+  color: whitesmoke;
 }
 
 .container {
-  background-color: #ffffff;
+  background-color: #990e0e;
   margin: 40px auto;
-  max-width: 800px;
+  max-width: 600px;
   padding: 38px 31px;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 input {
+  background-color: rgb(219, 219, 219);
   font-size: 21px;
   line-height: 33px;
   margin: 0 0 23px 0;
@@ -74,6 +76,8 @@ input {
 }
 
 button {
+  background-color: rgb(34, 25, 170);
+  color: whitesmoke;
   font-size: 21px;
   line-height: 33px;
   margin: 0 0 23px 0;
