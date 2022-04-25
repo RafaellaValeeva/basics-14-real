@@ -156,10 +156,12 @@ var main = function (input) {
     //GAMEMODE 3: Computer + 1 card if result < 17
   } else if (currentGameMode === "computerChoice") {
     if (computerScore < 17) {
-      computerHand.push(newShuffle.pop());
-      console.log(computerHand);
-      myOutputValue = `${computerCardOutputMessage(computerHand)} <br> <br> 
-      Click Submit to see the final score.`;
+      while (computerScore < 17) {
+        computerHand.push(newShuffle.pop());
+        console.log(computerHand);
+        myOutputValue = `${computerCardOutputMessage(computerHand)} <br> <br> 
+         Click Submit to see the final score.`;
+      }
     } else {
       myOutputValue = `Dealer stands. <br> <br> Dealer score is: ${computerScore} <br> <br> Click Submit to see the final score.`;
     }
