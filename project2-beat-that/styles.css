@@ -54,10 +54,11 @@ nav ul li a {
 
 #header {
   text-align: center;
+  color: whitesmoke;
 }
 
 .container {
-  background-color: #ffffff;
+  background-color: #5f9ea0;
   margin: 40px auto;
   max-width: 800px;
   padding: 38px 31px;

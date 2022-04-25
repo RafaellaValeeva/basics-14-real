@@ -7,6 +7,14 @@ The <html> element is known as the root element of a HTML page. All other elemen
 <html>
   <!-- The <head> element contains meta information about the HTML page, information that is not rendered or displayed by the browser -->
   <head>
+      <style>
+          body {
+            background-image: url('https://www.thoughtco.com/thmb/A7uKiN70Fka2rcokIiXQQUYiQng=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/173333692-56a142325f9b58b7d0bd89ae.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+          }
+          </style>
     <!-- The meta tag defines meta information in the HTML document. In this case, we are defining the charset. UTF-8 allows us to use emojis in the CodeSandbox environment -->
     <meta charset="UTF-8" />
     <!-- The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab) and is the default name given to a bookmark of a webpage. -->
@@ -60,9 +68,16 @@ The <html> element is known as the root element of a HTML page. All other elemen
       </ul>
     </nav>
     <!-- The <h1> element defines a large heading. There are 6 pre-set header elements, <h1> to <h6> -->
-    <h1 id="header">🚀 Basics Project 2: Beat That! 🚀</h1>
+    <h1 id="header">🎲 Beat That! 🎲</h1>
     <!-- The <div> tag defines a division or a section in an HTML document, and is commonly use as a "container" for nested HTML elements. -->
     <div class="container">
+      <div style="text-align:center;">
+        Hello! Welcome to Beat That! Click submit to start the game.
+      </p>
+      <p>
+        Create a two-digit number by selecting the order of your dice rolls.
+      </p>
+      <p>The player with the highest number wins! Good luck! 🍀</p></div> 
       <!-- The <p> tag defines a paragraph element. -->
       <p>Input:</p>
       <!-- The self-closing <input /> tag represents a field for a user to enter input. -->
@@ -72,7 +87,9 @@ The <html> element is known as the root element of a HTML page. All other elemen
       <!-- The <button> tag represents.. you guessed it! a button. -->
       <button id="submit-button">Submit</button>
       <p>Output:</p>
-      <div class="output-div" id="output-div"></div>
+      <div class="output-div" id="output-div">
+        Player One, please press Submit to roll the dice.
+      </div>
     </div>
     <!-- Everything below this is incorporating JavaScript programming logic into the webpage. -->
     <!-- The script tag encloses JavaScript syntax for the browser to interpret programtically -->
